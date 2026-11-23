@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<title>Light and Deeds – a game for kids</title>
+<link rel="stylesheet" href="game.css">
+</head>
+<body class="solo">
+<main class="shell">
+  <h1>Light and Deeds</h1>
+  <p class="sub">Dodge the sins. Collect good deeds. Keep the light on.</p>
+  <div class="game">
+    <div class="hud"><span>Good deeds: <b id="g-deeds">0</b></span><span>Sins dodged: <b id="g-pass">0</b></span><span>Best: <b id="g-best">0</b></span></div>
+    <div class="meter" role="img" aria-label="Light meter"><div id="g-light"></div></div>
+    <canvas id="g-canvas" width="480" height="640" tabindex="0" aria-label="Light and Deeds game. Press Space or tap to flap."></canvas>
+    <p id="g-msg" aria-live="polite"></p>
+  </div>
+  <p class="foot">Tap, click or press Space to flap.</p>
+</main>
+<script src="game.js"></script>
+</body>
+</html>
